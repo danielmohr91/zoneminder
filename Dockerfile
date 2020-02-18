@@ -1,6 +1,6 @@
 FROM phusion/baseimage:0.11
 
-LABEL maintainer="dlandon"
+LABEL maintainer="mohrdocker"
 
 ENV	DEBCONF_NONINTERACTIVE_SEEN="true" \
 	DEBIAN_FRONTEND="noninteractive" \

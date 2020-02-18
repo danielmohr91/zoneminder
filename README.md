@@ -14,7 +14,7 @@ You can donate [here](https://www.paypal.com/us/cgi-bin/webscr?cmd=_s-xclick&amp
 Install the docker by going to a command line and enter the command:
 
 ```bash
-docker pull dlandon/zoneminder
+docker pull mohrdocker/zoneminder
 ```
 
 This will pull the zoneminder docker image.  Once it is installed you are ready to run the docker.
@@ -39,7 +39,7 @@ docker run -d --name="Zoneminder" \
 -e INSTALL_YOLO="0" \
 -v "/mnt/Zoneminder":"/config":rw \
 -v "/mnt/Zoneminder/data":"/var/cache/zoneminder":rw \
-dlandon/zoneminder
+mohrdocker/zoneminder
 ```
 
 For http:// access use: -p 8080:80/tcp
@@ -301,7 +301,7 @@ The zmNinja Event Notification Server is accessed at port `9000`.  Security with
 - Update base image.
 
 2017-09-26
-- Change to dlandon/baseimage - phusion 9.22.
+- Change to mohrdocker/baseimage - phusion 9.22.
 
 2017-09-24
 - Modifications to dockerfile for auto build.
